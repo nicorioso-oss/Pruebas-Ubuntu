@@ -44,3 +44,8 @@
 | `crontab`   | Programar tareas automáticas                   | `crontab -e`                                 | Abre el archivo de configuración de tareas programadas. Útil para automatizar scripts. |              |                                                                                    |
 | `scp`       | Transferir archivos                            | `scp archivo.txt usuario@192.168.1.10:/home` | Copia archivos de forma segura entre equipos usando SSH.                               |              |                                                                                    |
 | `ssh`       | Conexión remota a servidor                     | `ssh usuario@ip_servidor`                    | Permite acceder de forma remota a otro sistema mediante el protocolo SSH.              |              |                                                                                    |
+
+#Comandos de Ubuntu
+
+##Comandos basicos
+
