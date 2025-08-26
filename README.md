@@ -1,6 +1,6 @@
-#Comandos de Ubuntu
+# Comandos de Ubuntu
 
-##Comandos basicos
+## Comandos basicos
 | **Comando** | **Descripción**             | **Ejemplo**                        | **Explicación**                                                                                                                                |
 | ----------- | --------------------------- | ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | `ls`        | Lista archivos y carpetas   | `ls -l`                            | Muestra el contenido del directorio actual. Con `-l` se obtiene una lista detallada con permisos, propietario, tamaño y fecha de modificación. |
@@ -14,7 +14,7 @@
 | `ps`        | Lista procesos activos      | `ps aux`                           | Muestra todos los procesos en ejecución junto con su PID (identificador de proceso).                                                           |
 | `kill`      | Finaliza procesos           | `kill 1234`                        | Termina un proceso usando su PID. Ejemplo: `kill 1234` mata el proceso con ID 1234.                                                            |
 
-##Comandos intermedios 
+## Comandos intermedios 
 | **Comando**       | **Descripción**                 | **Ejemplo**                                               | **Explicación**                                                                                     |
 | ----------------- | ------------------------------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
 | `find`            | Buscar archivos por nombre      | `find /home -name "*.log"`                                | Busca archivos dentro de un directorio. Aquí, busca todos los `.log` en `/home`.                    |
@@ -33,19 +33,14 @@
 | `tar`             | Comprimir/Descomprimir          | `tar -czvf backup.tar.gz /home/usuario`                   | Comprime una carpeta en un archivo `.tar.gz`.                                                       |
 | `zip / unzip`     | Comprimir/Descomprimir          | `zip -r proyecto.zip proyecto/` <br> `unzip proyecto.zip` | Crea un archivo `.zip` o lo descomprime.                                                            |
 
-##Comandos avazados
-| **Comando** | **Descripción**                                | **Ejemplo**                                  | **Explicación**                                                                        |              |                                                                                    |
-| ----------- | ---------------------------------------------- | -------------------------------------------- | -------------------------------------------------------------------------------------- | ------------ | ---------------------------------------------------------------------------------- |
-| \`ps aux    | grep\`                                         | Buscar procesos por nombre                   | \`ps aux                                                                               | grep nginx\` | Filtra procesos que coincidan con un nombre. Aquí busca si `nginx` está corriendo. |
-| `pkill`     | Finalizar procesos por nombre                  | `pkill -9 python`                            | Mata todos los procesos que tengan el nombre `python`.                                 |              |                                                                                    |
-| `alias`     | Crear alias de comandos                        | `alias ll='ls -la'`                          | Permite crear atajos para comandos largos. Aquí, `ll` equivale a `ls -la`.             |              |                                                                                    |
-| `history`   | Ver historial de comandos                      | `history`                                    | Muestra la lista de comandos ejecutados por el usuario.                                |              |                                                                                    |
-| `!<cmd>`    | Ejecutar último comando que inicia con `<cmd>` | `!ls`                                        | Ejecuta el último comando que comenzaba con `ls`.                                      |              |                                                                                    |
-| `crontab`   | Programar tareas automáticas                   | `crontab -e`                                 | Abre el archivo de configuración de tareas programadas. Útil para automatizar scripts. |              |                                                                                    |
-| `scp`       | Transferir archivos                            | `scp archivo.txt usuario@192.168.1.10:/home` | Copia archivos de forma segura entre equipos usando SSH.                               |              |                                                                                    |
-| `ssh`       | Conexión remota a servidor                     | `ssh usuario@ip_servidor`                    | Permite acceder de forma remota a otro sistema mediante el protocolo SSH.              |              |                                                                                    |
-
-#Comandos de Ubuntu
-
-##Comandos basicos
-
+## Comandos avazados
+| **Comando** | **Descripción**                                | **Ejemplo**                                  | **Explicación**                                                                                                                                                           |
+| ----------- | ---------------------------------------------- | -------------------------------------------- | -------------------------------------------------------------------------------------- | 
+| `ps aux`    | Buscar procesos por nombre                     | `grep nginx`                                 | Filtra procesos que coincidan con un nombre. Aquí busca si `nginx` está corriendo. | 
+| `pkill`     | Finalizar procesos por nombre                  | `pkill -9 python`                            | Mata todos los procesos que tengan el nombre `python`.                                 |              
+| `alias`     | Crear alias de comandos                        | `alias ll='ls -la'`                          | Permite crear atajos para comandos largos. Aquí, `ll` equivale a `ls -la`.             |              
+| `history`   | Ver historial de comandos                      | `history`                                    | Muestra la lista de comandos ejecutados por el usuario.                                |              
+| `!<cmd>`    | Ejecutar último comando que inicia con `<cmd>` | `!ls`                                        | Ejecuta el último comando que comenzaba con `ls`.                                      |              
+| `crontab`   | Programar tareas automáticas                   | `crontab -e`                                 | Abre el archivo de configuración de tareas programadas. Útil para automatizar scripts. |              
+| `scp`       | Transferir archivos                            | `scp archivo.txt usuario@192.168.1.10:/home` | Copia archivos de forma segura entre equipos usando SSH.                               |              
+| `ssh`       | Conexión remota a servidor                     | `ssh usuario@ip_servidor`                    | Permite acceder de forma remota a otro sistema mediante el protocolo SSH.              |              
