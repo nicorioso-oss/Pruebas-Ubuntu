@@ -1,8 +1,36 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<title>Hola</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Bienvenida</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-<h1>Hola que hace</h1>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full top-0 left-0">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-600">TechCol</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#" class="hover:text-blue-600 transition">Inicio</a></li>
+                <li><a href="#" class="hover:text-blue-600 transition">Catálogo</a></li>
+                <li><a href="#" class="hover:text-blue-600 transition">Nosotros</a></li>
+                <li><a href="#" class="hover:text-blue-600 transition">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+        <div class="text-center">
+            <h2 class="text-5xl font-bold mb-4">¡Bienvenido!</h2>
+            <p class="text-lg">Explora nuestro catálogo y conoce más sobre nosotros.</p>
+            <a href="#" class="mt-6 inline-block bg-white text-blue-600 px-6 py-2 rounded-full font-semibold shadow hover:bg-gray-100 transition">
+                Empezar
+            </a>
+        </div>
+    </section>
+
 </body>
 </html>
