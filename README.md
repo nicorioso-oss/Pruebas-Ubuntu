@@ -61,3 +61,43 @@
 
 #### INSERT INTO roles (roleId, roleName) VALUES (1, 'Admin');
 #### INSERT INTO roles (roleId, roleName) VALUES (2, 'Cliente');
+
+#### INSERT INTO customers (customerId, customerName, customerLastName, customerEmail, customerPassword, customerPhoneNumber, roleId) VALUES (1, 'Juan', 'Pérez', 'juanperez@example.com', 'pass123', '3001234567', 2);
+
+#### INSERT INTO customers (customerId, customerName, customerLastName, customerEmail, customerPassword, customerPhoneNumber, roleId) VALUES (2, 'Ana', 'Gómez', 'anagomez@example.com', 'pass456', '3017654321', 2);
+
+#### INSERT INTO adresses (adressId, street, city, state, postalCode, country, customerId) VALUES (1, 'Calle 123', 'Bogotá', 'Cundinamarca', '110111', 'Colombia', 1);
+
+#### INSERT INTO adresses (adressId, street, city, state, postalCode, country, customerId) VALUES (2, 'Carrera 45', 'Medellín', 'Antioquia', '050020', 'Colombia', 2);
+
+#### INSERT INTO products (productId, productName, productDescription, unitPrice, productStock) VALUES (1, 'Mouse Gamer', 'Mouse óptico RGB', 80.50, 100);
+
+#### INSERT INTO products (productId, productName, productDescription, unitPrice, productStock) VALUES (2, 'Teclado Mecánico', 'Teclado retroiluminado', 150.00, 50);
+
+#### INSERT INTO carts (cartId, cartPrice, createdAt, customerId) VALUES (1, 230.50, '2025-09-12 10:30:00', 1);
+
+#### INSERT INTO carts (cartId, cartPrice, createdAt, customerId) VALUES (2, 150.00, '2025-09-12 11:00:00', 2);
+
+#### INSERT INTO cart_details (cartDetailId, quantity, unitPrice, cartId, productId) VALUES (1, 2, 80.50, 1, 1);
+
+#### INSERT INTO cart_details (cartDetailId, quantity, unitPrice, cartId, productId) VALUES (2, 1, 150.00, 2, 2);
+
+#### INSERT INTO orders (orderId, orderPrice, orderDate, customerId, cartId) VALUES (1, 161.00, '2025-09-12 12:00:00', 1, 1);
+
+#### INSERT INTO orders (orderId, orderPrice, orderDate, customerId, cartId) VALUES (2, 150.00, '2025-09-12 12:15:00', 2, 2);
+
+#### INSERT INTO order_details (orderDetailId, quantity, unitPrice, orderId, productId) VALUES (1, 2, 80.50, 1, 1);
+
+#### INSERT INTO order_details (orderDetailId, quantity, unitPrice, orderId, productId) VALUES (2, 1, 150.00, 2, 2);
+
+#### INSERT INTO shipments (shipmentId, shipmentStatus, trackingNumber, shipmentDate, orderId) VALUES (1, 'SHIPPED', 'TRK12345', '2025-09-13 09:00:00', 1);
+
+#### INSERT INTO shipments (shipmentId, shipmentStatus, trackingNumber, shipmentDate, orderId) VALUES (2, 'PENDING', 'TRK67890', '2025-09-13 09:15:00', 2);
+
+#### INSERT INTO payments (paymentId, paymentMethod, paymentStatus, transactionId, amountPaid, paymentDate, orderId) VALUES (1, 'CREDIT_CARD', 'APPROVED', 'TXN1001', 161.00, '2025-09-12 12:30:00', 1);
+
+#### INSERT INTO payments (paymentId, paymentMethod, paymentStatus, transactionId, amountPaid, paymentDate, orderId) VALUES (2, 'PAYPAL', 'PENDING', 'TXN1002', 150.00, '2025-09-12 12:45:00', 2);
+
+#### INSERT INTO logs (logId, action, timestamp, customerId) VALUES (1, 'Inicio de sesión', '2025-09-12 09:00:00', 1);
+
+#### INSERT INTO logs (logId, action, timestamp, customerId) VALUES (2, 'Creación de pedido', '2025-09-12 12:00:00', 2);
