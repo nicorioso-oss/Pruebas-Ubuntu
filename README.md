@@ -47,8 +47,17 @@
 
 ## Imagenes 
 
-### Para poder subir imagenes es con un comando en el README simple 
+#### Para poder subir imagenes es con un comando en el README simple 
 ![Comando para imagenes](ejemplo.png)
-### Con este comando podremos subir imagenes a nuestro README 
-### por ejemplo el logo del SENA
+#### Con este comando podremos subir imagenes a nuestro README 
+#### por ejemplo el logo del SENA
 ![Logo del SENA](imagen.png)
+
+## Base de datos
+#### diseno
+![Diseño base de datos](basededatosTechCol.png)
+
+### Inserts de las tablas:
+
+#### INSERT INTO roles (roleId, roleName) VALUES (1, 'Admin');
+#### INSERT INTO roles (roleId, roleName) VALUES (2, 'Cliente');
